@@ -91,3 +91,23 @@ If you want this package in your language, just create a json lang file in your 
 ```
 resources/lang/vendor/google-autocomplete/es.json
 ```
+
+## Manually set short_name / long_name
+
+You can set the attributes by passing a complete array like this:
+
+```php
+GoogleAutocomplete::make('Address')
+    ->withValues(['route', 'street_number', 'postal_code', 'locality', 'country'])
+    ->addressComponents([
+        'subpremise'                  => 'short_name',
+        'street_number'               => 'short_name',
+        'route'                       => 'long_name',
+        'locality'                    => 'long_name',
+        'administrative_area_level_1' => 'short_name',
+        'administrative_area_level_2' => 'long_name',
+        'country'                     => 'short_name',
+        'postal_code'                 => 'short_name',
+    ]),
+```
+
