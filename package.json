@@ -16,6 +16,6 @@
   },
   "dependencies": {
     "vue": "^2.5.0",
-    "vue-google-autocomplete": "^1.1.0"
+    "vue-google-autocomplete": "jonasbrenig/vue-google-autocomplete"
   }
 }

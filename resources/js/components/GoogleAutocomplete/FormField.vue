@@ -12,7 +12,9 @@
                         :types="this.field.type"
                         v-model="value"
                         v-on:keypress.enter.prevent=""
-                        v-on:placechanged="getAddressData">
+                        v-on:placechanged="getAddressData"
+                        v-bind:address-components="this.field.addressComponents"
+                >
                 </vue-google-autocomplete>
             </div>
 
