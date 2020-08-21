@@ -74,4 +74,17 @@ class GoogleAutocomplete extends Field
             'addressObject' => array_merge($currentObject, $data)
         ]);
     }
+
+    	/**
+	 * Pass a country codes array
+	 *
+	 * @param string $addressComponents
+	 *
+	 * @return $this
+	 */
+	public function addressComponents(string $addressComponents) {
+		return $this->withMeta([
+			'addressComponents' => $addressComponents,
+		]);
+	}
 }
